@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class CreateInvoice {
-    public static void calcPrice() {
+
+    public static int calcPrice() {
         Scanner in = new Scanner(System.in);
         int waterTax = 1;
         int drainageTax = 1;
@@ -9,12 +10,18 @@ public class CreateInvoice {
         int waterAmount = 0;
 
         do {
-            System.out.print("Please Input what's the type of customer it is\n1. Agriculture \n" +
-                    "2.Industry\n3.private \nplease input a number matching the customer type");
+            System.out.println("Please Input what's the type of customer it is\n" +
+                    "1. Agriculture \n" +
+                    "2. Industry\n" +
+                    "3. Private \n" +
+                    "type 0 to return");
             if (in.hasNextInt()) {
                 chosenType = in.nextInt();
             } else {
                 System.out.println("please input a number matching the customer type");
+            }
+            if(chosenType ==0){
+                return -1;
             }
         } while (waterTax < 1 || waterTax > 3);
         DB.selectSQL("(SELECT water_tax FROM segment WHERE (segment_id =" + chosenType + "))");
@@ -37,8 +44,9 @@ public class CreateInvoice {
                 drainageTax = Integer.parseInt(data);
             }
         } while (true);
-        System.out.print("water tax: " + waterTax + " per m^3" + " Drainage tax: " + drainageTax + " per m^3\n" +
-                "Please insert the amount of water you want to calculate the price of in m^3\n");
+        System.out.println("water tax: " + waterTax + " per m^3" + " Drainage tax: " + drainageTax + " per m^3\n" +
+                "Please insert the amount of water you want to calculate the price of in m^3");
+
         do {
             if (in.hasNextInt()) {
                 waterAmount = in.nextInt();
@@ -46,12 +54,13 @@ public class CreateInvoice {
                 System.out.println("please insert a number matching the usage");
             }
         } while (waterAmount < 0);
-        System.out.println("total price for water usage: " + calculator(waterTax, drainageTax, waterAmount));
+        System.out.println("total price for water usage: " + calculator(waterTax, drainageTax, waterAmount) + " DKK");
+        return 0;
     }
 
     private static int calculator(int waterTax, int drainTax, int waterAmount) {
         int totalPrice;
-        totalPrice = (waterTax * waterAmount) + (drainTax * waterAmount);
+        totalPrice = (waterTax + drainTax) * waterAmount;
         return totalPrice;
     }
 }
