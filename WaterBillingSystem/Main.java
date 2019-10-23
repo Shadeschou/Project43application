@@ -1,33 +1,64 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
-        DB.insertSQL("Insert into project values('g42','Moon',23456);");
-        DB.selectSQL("Select * from project");
-
+        CreateInvoice.calcPrice();
+        //chooseMenu();
+    }
+    
+    public static void chooseMenu(){
+        Scanner in = new Scanner(System.in);
+        int chosenMenu =1;
+        System.out.print("Welcome to the Water Billing system, we have the following functions you can use\n" +
+                "1. Manage Customers \n 2. Manage Reading Cards \n 3. Create invoice \n" +
+                "4. Statics \n 5.Verify Payment \n 6. Manage Reminders ");
         do {
-            String data = DB.getDisplayData();
-            if (data.equals(DB.NOMOREDATA)) {
-                break;
-            } else {
-                System.out.print(data);
+            System.out.println("Please Select the Function you wanna use by selecting a number from 1-6");
+            if (in.hasNextInt()){
+                chosenMenu = in.nextInt();
+            }else{
+                System.out.println("The following input doesn't match the Function menu");
             }
-        } while (true);
-
-
-        DB.deleteSQL("Delete from project where project_no like 'g%';");
-
-        DB.selectSQL("Select project_name from project");
-
-        System.out.println("numberOfColumns=" + DB.getNumberOfColumns());
-        do {
-            String data = DB.getData();
-            if (data.equals(DB.NOMOREDATA)) {
-                break;
-            } else {
-                System.out.print(data);
+        }while(chosenMenu<1 || chosenMenu <6);
+            switch (chosenMenu){
+                case 1:
+                    manageCustomers();
+                    break;
+                case 2:
+                    manageReadingCards();
+                    break;
+                case 3:
+                    createInvoice();
+                    break;
+                case 4:
+                    manageStatistics();
+                    break;
+                case 5:
+                    verifyPayments();
+                case 6:
+                    manageReminders();
+                    break;
             }
-        } while (true);
+    }
+
+    private static void manageReminders() {
 
     }
 
+    private static void verifyPayments() {
+
+    }
+
+    private static void manageStatistics() {
+    }
+
+    private static void createInvoice() {
+    }
+
+    private static void manageReadingCards() {
+    }
+
+    private static void manageCustomers() {
+    }
 }
+

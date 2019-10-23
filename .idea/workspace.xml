@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69c3b580-d5c4-4f44-ab23-5dd56b1fc7b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project43application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project43application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaterBillingSystem/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/WaterBillingSystem/DB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WaterBillingSystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/WaterBillingSystem/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,32 +27,6 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="master: database" type="ccb7ac2a:MsImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="master: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="master: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="master: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Customer: table" type="63ab2ba1:MsImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -139,6 +110,8 @@
       <option name="presentableId" value="Default" />
       <updated>1571818068914</updated>
       <workItem from="1571818070093" duration="4381000" />
+      <workItem from="1571849396791" duration="850000" />
+      <workItem from="1571850718093" duration="5604000" />
     </task>
     <servers />
   </component>
@@ -150,10 +123,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WaterBillingSystem/CreateInvoice.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
