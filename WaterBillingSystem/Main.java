@@ -1,33 +1,32 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main (String [] args){
 
-        DB.insertSQL("Insert into project values('g42','Moon',23456);");
-        DB.selectSQL("Select * from project");
+            DB.insertSQL("Insert into City values(2650,'Hvidovre');");
+            DB.selectSQL("Select * from City");
 
-        do {
-            String data = DB.getDisplayData();
-            if (data.equals(DB.NOMOREDATA)) {
-                break;
-            } else {
-                System.out.print(data);
-            }
-        } while (true);
+            do{
+                String data = DB.getDisplayData();
+                if (data.equals(DB.NOMOREDATA)){
+                    break;
+                }else{
+                    System.out.print(data);
+                }
+            } while(true);
 
 
-        DB.deleteSQL("Delete from project where project_no like 'g%';");
+            DB.deleteSQL("Delete from project where project_no like 'g%';");
 
-        DB.selectSQL("Select project_name from project");
+            DB.selectSQL("Select project_name from project");
 
-        System.out.println("numberOfColumns=" + DB.getNumberOfColumns());
-        do {
-            String data = DB.getData();
-            if (data.equals(DB.NOMOREDATA)) {
-                break;
-            } else {
-                System.out.print(data);
-            }
-        } while (true);
+            System.out.println("numberOfColumns="+DB.getNumberOfColumns());
+            do{
+                String data = DB.getData();
+                if (data.equals(DB.NOMOREDATA)){
+                    break;
+                }else{
+                    System.out.print(data);
+                }
+            } while(true);
 
-    }
-
+        }
 }
