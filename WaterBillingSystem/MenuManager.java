@@ -70,11 +70,11 @@ public class MenuManager {
                     return -1;
 
                 case 1:
-                    return CreateInvoice.calcPrice();
-
-                case 2:
                     System.out.println("NOT AVAILABLE IN PROOF OF CONCEPT VERSION");
                     break;
+
+                case 2:
+                    return AddCustomer.addCustomer();
 
                 default:
                     System.out.println("Input doesn't match menu number try a number from 1-2");
@@ -106,7 +106,7 @@ public class MenuManager {
                     return -1;
 
                 case 1:
-                    CreateInvoice.calcPrice();
+                    System.out.println("NOT AVAILABLE IN PROOF OF CONCEPT VERSION");
                     break;
                 case 2:
                     System.out.println("NOT AVAILABLE IN PROOF OF CONCEPT VERSION");
