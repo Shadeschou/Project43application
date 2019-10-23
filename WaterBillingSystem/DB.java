@@ -1,6 +1,8 @@
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -40,7 +42,8 @@ public class DB {
      */
     static {
         Properties props = new Properties();
-        String fileName = "C:\\Users\\Line\\IdeaProjects\\WaterWorkProject\\Project43application\\db.properties";
+        Path dbPropertiesPath = Paths.get("db.properties");
+        String fileName = dbPropertiesPath.toString();
         InputStream input;
         try{
             input = new FileInputStream(fileName);
@@ -50,7 +53,7 @@ public class DB {
             userName=props.getProperty("userName", "sa");
             password=props.getProperty("password");
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            System.out.println("Database Ready");
+
 
         }catch(IOException | ClassNotFoundException e){
             System.err.println(e.getMessage());
