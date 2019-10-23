@@ -40,7 +40,7 @@ public class DB {
      */
     static {
         Properties props = new Properties();
-        String fileName = "C:\\Users\\cappe\\OneDrive\\Skrivebord\\Project43application\\Project43application\\db.properties";
+        String fileName = "C:\\Users\\Line\\IdeaProjects\\WaterWorkProject\\Project43application\\db.properties";
         InputStream input;
         try{
             input = new FileInputStream(fileName);
