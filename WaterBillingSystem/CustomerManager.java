@@ -11,7 +11,7 @@ public class CustomerManager {
         int zipCode;
         String customerAddress;
         String customerName;
-        String customerEmail
+        String customerEmail;
 
         System.out.println("The following functions can be found in the Reading Card menu\n" +
                 "1. Insert Reading Card\n" +
