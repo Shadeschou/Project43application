@@ -6,6 +6,7 @@
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WaterBillingSystem/AddCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/WaterBillingSystem/AddCustomer.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/WaterBillingSystem/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/WaterBillingSystem/MenuManager.java" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/WaterBillingSystem/ManageReadingCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/WaterBillingSystem/ManageReadingCards.java" afterDir="false" />
@@ -13,6 +14,9 @@
 =======
       <change beforePath="$PROJECT_DIR$/WaterBillingSystem/ManageReadingCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/WaterBillingSystem/ManageReadingCards.java" afterDir="false" />
 >>>>>>> e9e826fca5d6e1c0ffa60cea2247fc79e9678e47
+=======
+      <change beforePath="$PROJECT_DIR$/WaterBillingSystem/CreateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/WaterBillingSystem/CreateInvoice.java" afterDir="false" />
+>>>>>>> updating classes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -2,14 +2,21 @@ import java.util.Scanner;
 
 public class CustomerManager {
     public static int addCustomer() {
+        //Variables
         int chosenMenu = -1;
-
-        //create Scanner
         Scanner in = new Scanner(System.in);
         in.useDelimiter("\n");
+        int segmentType;
+        int customerId;
+        int zipCode;
+        String customerAddress;
+        String customerName;
+        String customerEmail;
 
-        System.out.println("The following functions can be found in the Reading Card menu\n" +
-                "1. Insert Reading Card\n" +
+
+        System.out.println("The following functions can be found in the customer manager\n" +
+                "1. Add Customer\n" +
+
                 "press 0 to go back");
 
         while (chosenMenu == -1) {
@@ -32,26 +39,27 @@ public class CustomerManager {
 
         //hold data for new customer in variables
         System.out.println("Please input customer ID No:");
-        int customerId = in.nextInt();
+        customerId = in.nextInt();
 
         System.out.println("Please input customer type: 1, 2, or 3 (1=agriculture, 2=industry, 3=private household)");
-        int segmentType = in.nextInt();
+        segmentType = in.nextInt();
 
         System.out.println("Please input street and House No:");
-        String customerAddress = in.next();
+        customerAddress = in.next();
 
         System.out.println("Please input zipCode:");
-        int zipCode = in.nextInt();
+        zipCode = in.nextInt();
 
         System.out.println("Please input customer name:");
-        String customerName = in.next();
+        customerName = in.next();
 
         System.out.println("Please input customer Email:");
-        String customerEmail = in.next();
+        customerEmail = in.next();
 
 
         //insert data for new custromer into Database
-        DB.insertSQL("insert into customer values ('" + customerId + "', '" + segmentType + "', '" + customerAddress + "', '" + zipCode + "', '" + customerName + "', '" + customerEmail + "', '1' )");
+        DB.insertSQL("insert into customer values ('" + customerId + "', '" + segmentType + "', '" + customerAddress +
+                "', '" + zipCode + "', '" + customerName + "', '" + customerEmail + "', '1' )");
         return 0;
     }
 }

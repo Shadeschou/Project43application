@@ -140,7 +140,7 @@ public class MenuManager {
                     return -1;
 
                 case 1:
-                    return CreateInvoice.calcPrice();
+                    return InvoiceSystem.calcPrice();
                 case 2:
                     System.out.println("NOT AVAILABLE IN PROOF OF CONCEPT VERSION");
                     break;
