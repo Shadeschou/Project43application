@@ -19,7 +19,7 @@ public class ManageReadingCards {
         System.out.println("Enter reading date ddmmyyyy: ");
         readingDate = in.nextInt();
 
-        DB.insertSQL("INSERT INTO reading_card values(NULL,'"+readingDate+"',NULL,'"+readingAmount+"','"+serialID+"') ");
+        DB.insertSQL("INSERT INTO reading_card values(NULL," + readingDate + ",NULL," + readingAmount + ", " + serialID + ") ");
     }
 
 
