@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CreateInvoice {
+public class InvoiceSystem {
 
     public static int calcPrice() {
         Scanner in = new Scanner(System.in);
