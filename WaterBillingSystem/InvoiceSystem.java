@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 public class InvoiceSystem {
-
+    /**
+     * This Methods get's the input of a user to select a segment and input a water amount to calculate the price
+     * @return
+     */
     public static int calcPrice() {
         Scanner in = new Scanner(System.in);
         int waterTax = 1;
@@ -59,6 +62,13 @@ public class InvoiceSystem {
         return 0;
     }
 
+    /**
+     * This a helper method to calculate the total price for water based on the input parameters
+     * @param waterTax
+     * @param drainTax
+     * @param waterAmount
+     * @return
+     */
     private static int calculator(int waterTax, int drainTax, int waterAmount) {
         int totalPrice;
         totalPrice = (waterTax + drainTax) * waterAmount;

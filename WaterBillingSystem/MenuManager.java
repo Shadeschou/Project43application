@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class MenuManager {
+
+    /**
+     * A menu controller that controls where the user wanna go
+     */
     public static void chooseMenu() {
         Scanner in = new Scanner(System.in);
         int chosenMenu = -1;

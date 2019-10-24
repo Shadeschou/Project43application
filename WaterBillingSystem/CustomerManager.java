@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class CustomerManager {
+    /**
+     * Adds a customer to our databse
+     * @return
+     */
     public static int addCustomer() {
         //Variables
         int chosenMenu = -1;
