@@ -54,6 +54,7 @@ public class CreateInvoice {
                 System.out.println("please insert a number matching the usage");
             }
         } while (waterAmount < 0);
+
         System.out.println("total price for water usage: " + calculator(waterTax, drainageTax, waterAmount) + " DKK");
         return 0;
     }
