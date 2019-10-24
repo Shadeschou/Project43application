@@ -54,7 +54,7 @@ public class MenuManager {
     private static int manageCustomers() {
         Scanner in = new Scanner(System.in);
         int chosenMenu = -1;
-        System.out.println("The following functions can be found in the Reminder manager\n" +
+        System.out.println("The following functions can be found in the Customer manager\n" +
                 "1. Edit Customer [Unavailable]\n" +
                 "2. Add Customer\n" +
                 "press 0 to go back");
@@ -74,7 +74,7 @@ public class MenuManager {
                     break;
 
                 case 2:
-                    return AddCustomer.addCustomer();
+                    return CustomerManager.addCustomer();
 
                 default:
                     System.out.println("Input doesn't match menu number try a number from 1-2");
@@ -88,9 +88,9 @@ public class MenuManager {
     private static int manageReadingCards() {
         Scanner in = new Scanner(System.in);
         int chosenMenu = -1;
-        System.out.println("The following functions can be found in the Reminder manager\n" +
+        System.out.println("The following functions can be found in the Reading Card manager\n" +
                 "1. Generate Reading Card [Unavailable]\n" +
-                "2. Insert Reading Card Data [Unavailable]\n" +
+                "2. Insert Reading Card Data\n" +
                 "3. \n" +
                 "press 0 to go back"
         );
@@ -109,8 +109,7 @@ public class MenuManager {
                     System.out.println("NOT AVAILABLE IN PROOF OF CONCEPT VERSION");
                     break;
                 case 2:
-                    System.out.println("NOT AVAILABLE IN PROOF OF CONCEPT VERSION");
-                    break;
+                    return ReadingCardController.insertReadingCardData();
 
                 default:
                     System.out.println("Input doesn't match menu number try a number from 1-2");
@@ -124,7 +123,7 @@ public class MenuManager {
     private static int createInvoice() {
         Scanner in = new Scanner(System.in);
         int chosenMenu = -1;
-        System.out.println("The following functions can be found in the Reminder manager\n" +
+        System.out.println("The following functions can be found in the Invoice Controller\n" +
                 "1. Calculate Price\n" +
                 "2. Generate Invoice [Unavailable]\n" +
                 "press 0 to go back"
