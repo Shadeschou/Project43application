@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AddCustomer {
+public class CustomerManager {
     public static int addCustomer() {
         int chosenMenu = -1;
 
@@ -8,8 +8,8 @@ public class AddCustomer {
         Scanner in = new Scanner(System.in);
         in.useDelimiter("\n");
 
-        System.out.println("The following functions can be found in the customer manager\n" +
-                "1. Add Customer\n" +
+        System.out.println("The following functions can be found in the Reading Card menu\n" +
+                "1. Insert Reading Card\n" +
                 "press 0 to go back");
 
         while (chosenMenu == -1) {
